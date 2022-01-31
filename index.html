@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Погода</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<form class="form" action="#" onsubmit="return false">
+				<input class="entry-field" type="text" placeholder="Krasnoyarsk">
+				<button>
+					<img class="img-search" src="/img/serch.png" alt="">
+				</button>
+			</form>
+			<div class="content__row">
+				<div class="first-block">
+
+					<div class="tabs">
+						<div id="tab_01" class="tabs__block">
+							<div class="tabs__row">
+								<span class="tabs__temperature">14&deg;</span><br>
+								<span class="image-weather"><img class="cloudy" src="/img/MainlyСloudy.png" alt=""></span>
+								<span class="sity-name">Krasnoyarsk</span>
+								<span class="tabs__like"></span>
+
+
+							</div>
+
+						</div>
+						<div id="tab_02" class="tabs__block">
+							<div class="tabs__sity-name">Krasnoyarsk</div>
+							<div class="tabs__description temperature">Temperature: 14&deg;</div>
+							<div class="tabs__description like">Feels like: 10&deg;</div>
+							<div class="tabs__description weather">Weather: Clouds</div>
+							<div class="tabs__description sunrise">Sunrise: 03:21</div>
+							<div class="tabs__description sunset">Sunset: 18:54</div>
+						</div>
+						<div id="tab_03" class="tabs__block">
+							<div class="scroll">
+								<div class="tabs__sity-name months">Krasnoyarsk</div>
+								<template id="cloneForecast" class="tabs__sity-name ">
+									<div class="tabs__weather">
+										<span class="tabs__date"></span>
+										<span class="tabs__clock"></span>
+										<span class="tabs__temperatures"></span>
+										<span class="tabs__likes"></span>
+										<span class="tabs__rain"></span>
+										<img class="img-rain" src="/img/icons8-rain-96 1.png" alt="">
+									</div>
+								</template>
+							</div>
+						</div>
+						<nav class="tabs__items">
+							<a href="#tab_01" class="tabs__item"> <span>Now</span> </a>
+							<a href="#tab_02" class="tabs__item"> <span>Details</span> </a>
+							<a href="#tab_03" class="tabs__item"> <span class="tab-forecast">Forecast</span> </a>
+						</nav>
+					</div>
+				</div>
+
+				<div class="locations">
+					<div class="location__added">
+						<span>Added Location</span>
+					</div>
+
+					<div class="location__names">
+						<div class="scroll">
+							<template id="favorite-city" class="location__name">
+								<div class="location__row">
+									<span class="description"></span>
+									<span class="delete-sity">×</span>
+								</div>
+							</template>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/js/constants.js" type="module"></script>
+	<script src="/js/utils.js" type="module"></script>
+	<script src="/js/rightSideBar.js" type="module"></script>
+	<script src="/js/forecact.js" type="module" ></script>
+	<script src="/js/now.js" type="module" ></script>
+	<script src="/js/main.js" type="module"></script>
+</body>
