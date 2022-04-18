@@ -16,7 +16,7 @@ arrayFavoritSity.forEach(item => {
 	const newElement = createElement(item)
 	addContainer(newElement);
 })
-
+//test
 function handleSetCity(event) {
 	event.preventDefault();
 	const nameCity = input.value;
